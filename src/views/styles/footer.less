@@ -1,4 +1,5 @@
 @import './colors.less';
+@import './time.less';
 @import './dimensions.less';
 
 footer {
@@ -7,6 +8,7 @@ footer {
   a {
     color: inherit;
     text-decoration: none;
+    border-bottom: none;
   }
 
   > div {
@@ -33,6 +35,8 @@ footer .about {
 footer .contact {
   grid-area: contact;
   align-self: center;
+  text-align: left;
+  margin: 0 auto;
 }
 
 footer .copyright {
@@ -54,5 +58,23 @@ footer .copyright {
     &:first-child {
       border-left: none;
     }
+  }
+}
+
+footer .social-link {
+  display: block;
+  margin: .25em 0;
+
+  img {
+    height: 1.5em;
+    opacity: .3;
+    filter: grayscale(100%);
+    vertical-align: bottom;
+    transition: opacity @time-defalut-transition ease-in-out;
+    margin-right: .5em;
+  }
+
+  &:hover img {
+    opacity: .6;
   }
 }

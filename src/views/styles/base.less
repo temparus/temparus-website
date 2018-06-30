@@ -1,6 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic.css';
 @import './colors.less';
 @import './dimensions.less';
+@import './time.less';
 @import './background.less';
 @import './mediaquery.less';
 @import './logo';
@@ -94,7 +95,7 @@ main {
 
 a {
   color: @color-text-medium;
-  transition: color .2s ease-in-out, border-color .2s ease-in-out, opacity .2s ease-in-out;
+  transition: color @time-defalut-transition ease-in-out, border-color @time-defalut-transition ease-in-out, opacity @time-defalut-transition ease-in-out;
   text-decoration: none;
   border-bottom: dotted 1px;
 
