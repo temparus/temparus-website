@@ -1,0 +1,53 @@
+{
+  "name": "temparus-website",
+  "version": "0.0.1",
+  "description": "temparus website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack -d --watch",
+    "build": "webpack -p --config webpack.config.prod.js",
+    "server": "webpack-dev-server --hot --inline",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint src/**",
+    "stylelint": "stylelint 'src/**/*.less' --synthax less",
+    "format": "prettier --write '**/*.{js,jsx}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com/temparus/temparus-website.git"
+  },
+  "author": "Sandro Lutz",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "email-validator": "^2.0.3",
+    "i18n4v": "^0.2.2",
+    "marked": "^0.3.18",
+    "mithril": "^1.1.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "compression-webpack-plugin": "^1.0.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-import-resolver-webpack": "^0.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "stylelint": "^9.3.0",
+    "file-loader": "^1.1.11",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "markdown-loader": "^2.0.2",
+    "prettier": "1.11.1",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "values": {
+        "Menu": "Menu",
+        "Home": "Home",
+        "Service": "Service",
+        "Software": "Software",
+        "Model Making": "Model Making",
+        "Electronics": "Electronics",
+        "legal-notice": "Legal Notice",
+        "Switzerland": "Switzerland",
+        "about.title": "About me",
+        "about.text": "I study Electrical Engineering and Information Technology at ETH Zurich and love to code.",
+        "error404.title": "404, that's an error!",
+        "error404.text": "This page does not exist.",
+        "language.abbreviation.en": "English",
+        "language.abbreviation.de": "German"
+    }
+}
