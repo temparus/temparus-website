@@ -1,4 +1,5 @@
 import m from 'mithril';
+import marked from 'marked';
 import { LanguageController, i18n } from '../models/language';
 import LinkedInIcon from './images/linkedin.png';
 import GitHubIcon from './images/github.png';
@@ -18,7 +19,7 @@ export default class Footer {
     return m(
       'footer.wrapper.dotted',
       m('div', [
-        m('div.about', [m('h3', i18n('about.title')), m('p', i18n('about.text'))]),
+        m('div.about', [m('h3', i18n('about.title')), m.trust(marked(i18n('about.text')))]),
         m('div.contact', [
           m(SocialLink, {
             label: 'linkedin.com/sandrolutz',
